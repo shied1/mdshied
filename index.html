@@ -3,156 +3,132 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MD Shied Portfolio</title>
+<title>MD Shied | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
 <style>
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
-    background: #f4f4f4;
-    color: #333;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #0f172a;
+    color: white;
 }
 
 header {
-    background: #222;
-    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding: 40px 20px;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 40px;
+h1 {
+    font-size: 60px;
 }
 
-header p {
-    letter-spacing: 2px;
+.typing {
+    color: #38bdf8;
+    border-right: 2px solid;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    animation: typing 4s steps(30, end) forwards, blink 0.7s infinite;
 }
 
-.container {
-    width: 90%;
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink {
+    50% { border-color: transparent }
+}
+
+section {
+    padding: 80px 20px;
     max-width: 1000px;
     margin: auto;
 }
 
-section {
-    background: white;
-    margin: 20px 0;
+.card {
+    background: #1e293b;
     padding: 20px;
+    margin: 20px 0;
     border-radius: 10px;
+    transition: 0.3s;
 }
 
-h2 {
-    border-bottom: 2px solid #ddd;
-    padding-bottom: 10px;
-}
-
-ul {
-    padding-left: 20px;
+.card:hover {
+    transform: scale(1.05);
 }
 
 .skills span {
     display: inline-block;
-    background: #222;
-    color: white;
-    padding: 5px 10px;
     margin: 5px;
-    border-radius: 5px;
+    padding: 8px 15px;
+    background: #38bdf8;
+    border-radius: 20px;
 }
 
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #222;
-    color: white;
-}
 </style>
-
 </head>
+
 <body>
 
 <header>
-    <h1>MD SHIED</h1>
-    <p>Creative Digital Services Provider</p>
+<div>
+<h1>MD SHIED</h1>
+<h2 class="typing">Creative Digital Services Provider</h2>
+</div>
 </header>
-
-<div class="container">
 
 <section>
 <h2>About Me</h2>
+<div class="card">
 <p>
-Motivated and detail-oriented individual with strong interest in technology, digital creativity, and self-development. Skilled in solving problems, learning new tools quickly, and delivering high-quality work professionally.
+Motivated Computer Science student passionate about AI, web development, and digital creativity. Experienced in building websites, designing graphics, and helping businesses grow online.
 </p>
+</div>
 </section>
 
 <section>
 <h2>Skills</h2>
-<div class="skills">
-<span>Website Creation (AI)</span>
+<div class="card skills">
+<span>Web Development</span>
+<span>AI Tools</span>
 <span>Graphic Design</span>
 <span>Video Editing</span>
 <span>Presentation Design</span>
-<span>MS Office</span>
-<span>LaTeX</span>
 </div>
 </section>
 
 <section>
 <h2>Experience</h2>
-<ul>
-<li><b>Freelance Digital Services Provider</b> – Provided website setup, logo design, video editing, and branding services.</li>
-<li><b>Website & Digital Media Assistant</b> – Created websites, designed graphics, edited videos, and presentations.</li>
-<li><b>Production & Shop Assistant (UK)</b> – Customer service, checkout handling, and store management.</li>
-</ul>
-</section>
+<div class="card">
+<p><b>Freelance Digital Services Provider</b></p>
+<p>Website setup, branding, video editing, client projects.</p>
+</div>
 
-<section>
-<h2>Education</h2>
-<ul>
-<li>BSc in Computer Science – Brunel University (2026–)</li>
-<li>HSC – Scholarshome (2023)</li>
-<li>SSC – Scholarshome (2021)</li>
-</ul>
-</section>
-
-<section>
-<h2>Achievements</h2>
-<ul>
-<li>Introduction to Data Science – Simplilearn</li>
-<li>Machine Learning Certificate – Simplilearn</li>
-<li>Research: Maternal Tetanus Vaccination (Under Review)</li>
-</ul>
+<div class="card">
+<p><b>Website & Digital Media Assistant</b></p>
+<p>Created websites, graphics, and promotional content.</p>
+</div>
 </section>
 
 <section>
 <h2>Contact</h2>
+<div class="card">
 <p>Email: shiedalhasan8751@gmail.com</p>
 <p>Phone: +44 7344 962034</p>
-<p>Location: London, United Kingdom</p>
 <p>LinkedIn: linkedin.com/in/md-shied-795a1527b</p>
-</section>
-
 </div>
-
-<footer>
-<p>© 2026 MD Shied | Portfolio</p>
-</footer>
+</section>
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
